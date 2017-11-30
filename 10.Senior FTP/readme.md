@@ -1,5 +1,5 @@
 ﻿**readme**
-
+···
 Senior_FTP/
 |-- bin/
 |   |-- __init__.py
@@ -26,7 +26,7 @@ Senior_FTP/
 |   |-- log                  #操作日志
 |   |-- log_print.py         #打印日志模块
 |   
-
+···
 程序的用户账户：        账号：QQ   密码：123
                         账号：QQ1  密码：123
 				        账号：QQ2  密码：123
