@@ -1,5 +1,9 @@
 ﻿**readme**
+<<<<<<< HEAD
 ···
+=======
+'''
+>>>>>>> 620b9c504a658494b7e67b41c8e6745a03b60983
 select ftp/
 |-- bin/
 |   |-- client_run.py                    #启动客户端程序主入口
@@ -17,7 +21,11 @@ select ftp/
 |   |-- log                  #操作日志
 |   |-- log_print.py         #打印日志模块
 |   
+<<<<<<< HEAD
 ···
+=======
+'''
+>>>>>>> 620b9c504a658494b7e67b41c8e6745a03b60983
 				        
 程序包含模仿简单实现了select版 FTP 功能,包含以下小功能：
     1、    get   file name 下载文件 (file name 指的是bin目录下的， server_run.py 和 client_run.py 两个文件，如果要上传，下载其他路径下的文件需要加上路径)

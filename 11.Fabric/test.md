@@ -1,5 +1,9 @@
 ﻿**test**
+<<<<<<< HEAD
 ···
+=======
+'''
+>>>>>>> 620b9c504a658494b7e67b41c8e6745a03b60983
  - **case**
 
 目前主机host列表如下:
@@ -183,4 +187,8 @@ b2b_logs（文件）
 **cmd>>>get .mysql_history**
 2017-11-08 17:41:51,940 - test.log - INFO - get successful
 **cmd>>>exit**
+<<<<<<< HEAD
 ···
+=======
+'''
+>>>>>>> 620b9c504a658494b7e67b41c8e6745a03b60983
