@@ -1,0 +1,30 @@
+2017-11-08 14:54:59,489 - test.log - INFO - get successful
+2017-11-08 14:55:17,521 - test.log - INFO - get successful
+2017-11-08 14:57:06,425 - test.log - INFO - cmd is not match
+2017-11-08 14:59:02,948 - test.log - INFO - get successful
+2017-11-08 14:59:22,503 - test.log - INFO - cmd is not match
+2017-11-08 15:07:34,086 - test.log - INFO - cmd is not match
+2017-11-08 15:11:12,766 - test.log - INFO - put successful
+2017-11-08 16:21:43,760 - test.log - INFO - get successful
+2017-11-08 16:21:54,290 - test.log - INFO - cmd is not match
+2017-11-08 17:07:42,205 - test.log - INFO - 主机192.168.1.249已激活
+2017-11-08 17:08:38,375 - test.log - INFO - get successful
+2017-11-08 17:08:46,858 - test.log - INFO - put successful
+2017-11-08 17:08:55,103 - test.log - INFO - 主机101.236.17.4已激活
+2017-11-08 17:09:17,402 - test.log - INFO - get successful
+2017-11-08 17:09:40,916 - test.log - INFO - 主机101.236.32.210已激活
+2017-11-08 17:10:03,462 - test.log - INFO - get successful
+2017-11-08 17:29:14,620 - test.log - INFO - 主机192.168.1.249已激活
+2017-11-08 17:34:28,726 - test.log - INFO - 主机192.168.1.249已激活
+2017-11-08 17:35:23,265 - test.log - INFO - put successful
+2017-11-08 17:35:28,304 - test.log - INFO - [WinError 2] 系统找不到指定的文件。: 'C:\\Users\\dell\\PycharmProjects\\untitled\\home_work\\Fabric\\db\\put_file\\test5'
+2017-11-08 17:35:51,431 - test.log - INFO - get successful
+2017-11-08 17:38:34,577 - test.log - INFO - 主机192.168.1.249已激活
+2017-11-08 17:39:25,041 - test.log - INFO - get successful
+2017-11-08 17:39:32,257 - test.log - INFO - put successful
+2017-11-08 17:40:19,219 - test.log - INFO - get successful
+2017-11-08 17:40:36,593 - test.log - INFO - put successful
+2017-11-08 17:40:42,271 - test.log - INFO - 主机101.236.17.4已激活
+2017-11-08 17:41:03,547 - test.log - INFO - get successful
+2017-11-08 17:41:39,454 - test.log - INFO - 主机101.236.32.210已激活
+2017-11-08 17:41:51,940 - test.log - INFO - get successful
