@@ -206,10 +206,10 @@ class FabricHost(object):
 
 
 if __name__ == "__main__":
-    start = FabricHost("101.236.23.237", "root", "8Jy9ZAb3sDsU")
-    #start = Fabric("192.168.1.249", "keepambition", "123456")
-    #start.get_file('/root/css/flightFooter.css', 'file')
-    # start.show_remote_files("cd /home/fr/webServer")
+    start = FabricHost()
+    #start = Fabric()
+    #start.get_file()
+    # start.show_remote_files()
     # start.exec_cmd()
     # start.thread()
     #start.show_host()
