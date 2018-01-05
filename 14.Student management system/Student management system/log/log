@@ -1,0 +1,13 @@
+2018-01-05 01:35:31,672 - sqlalchemy_practice.log - INFO - Score the students successful
+2018-01-05 01:36:13,329 - sqlalchemy_practice.log - INFO - Score the students successful
+2018-01-05 01:37:08,750 - sqlalchemy_practice.log - INFO - Score the students successful
+2018-01-05 01:38:30,017 - sqlalchemy_practice.log - INFO - check the students score successful
+2018-01-05 01:39:06,230 - sqlalchemy_practice.log - INFO - Score the students successful
+2018-01-05 16:08:30,030 - sqlalchemy_practice.log - INFO - create test data successful
+2018-01-05 16:09:17,788 - sqlalchemy_practice.log - INFO - create new class successful
+2018-01-05 16:10:01,876 - sqlalchemy_practice.log - INFO - split class successful
+2018-01-05 16:10:54,411 - sqlalchemy_practice.log - INFO - create lesson record successful
+2018-01-05 16:11:32,756 - sqlalchemy_practice.log - INFO - Score the students successful
+2018-01-05 16:22:51,324 - sqlalchemy_practice.log - INFO - check the students score successful
+2018-01-05 16:23:12,635 - sqlalchemy_practice.log - INFO - commit homework successful
+2018-01-05 16:23:32,064 - sqlalchemy_practice.log - INFO - check the score ranking successful
