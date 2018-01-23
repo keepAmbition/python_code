@@ -1,0 +1,150 @@
+/*注册页面logo+title*/
+.form_head{
+       width: 990px;
+       height: 110px;
+       border-color: red;
+       margin: 0 auto;
+}
+.register_start{
+    background: url(image/headbg.jpg) repeat-x left bottom;
+    height: 70px;
+}
+
+div img{
+    float: left;
+    height: 60px;
+    width: 170px;
+    font-size: 24px;
+    /*color: #333;*/
+    padding-left: 20px;
+    margin-top: 34px;
+}
+.welcome{
+    float: left;
+    height: 10px;
+    line-height: 10px;
+    font-size: 30px;
+    color: #333;
+    padding-left: 20px;
+    margin-top: 70px;
+}
+.form_head #logo .please_login{
+    font-size: 16px;
+    float: right;
+    margin-top: 71px;
+    color: #999;
+}
+.form_head #logo span a{
+    color: #333;
+    /*text-decoration: none;*/
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+/*注册body*/
+.pg_body{
+    width: 1210px;
+    /*background-color: #303030;*/
+    margin: 50px auto 60px;
+    height: 900px;
+}
+
+.pg_body_left{
+    width: 400px;
+    /*background-color: #e93854;*/
+    height: 440px;
+    margin-left: 105px;
+}
+
+.form-item{
+    position: relative;
+    border: solid 1px #ddd;
+    width: 398px;
+    height: 52px;
+    margin: 45px auto;
+}
+.form-item label{
+    float: left;
+    width: 90px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 20px;
+}
+
+.form-item .field{
+    border: 0 none;
+    font-size: 14px;
+    width: 268px;
+    height: 25px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.form-item .phone{
+    border: 0 none;
+    font-size: 14px;
+    width: 268px;
+    height: 25px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.qr-code{
+    position: absolute;
+    right: 3px;
+    top: -27px;
+    width: 112px;
+    height: 43px;
+    border: none;
+}
+.phone_code{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 110px;
+    height: 46px;
+    border: none;
+    background: #f2f2f2;
+    color: #333;
+    padding: 0;
+}
+.button_reg{
+    width: 400px;
+    height: 54px;
+}
+.button_register{
+    width: 100%;
+    height: 54px;
+    color: #fff;
+    background: #e22;
+    border: 0;
+    font-size: 16px;
+}
+
+.pg_body_right{
+    float: left;
+    margin-left: 450px;
+    height: 566px;
+    margin-top: -450px;
+    padding-left: 90px;
+    border-left: solid 2px #e6e6e6;
+    position: relative;
+}
+#company{
+    width: 227px;
+    height: 127px;
+    margin-left: 82px;
+    padding-bottom: 23px;
+    border-bottom: solid 2px #e6e6e6;
+}
+
+#international{
+    position: absolute;
+    width: 227px;
+    height: 127px;
+    border: 0;
+    top: 200px;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 23px;
+}

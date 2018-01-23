@@ -1,0 +1,153 @@
+/*文字配色*/
+.color1{
+    color: #999;
+}
+.color2{
+    color: red;
+    background-color: #F9F9F9;
+    height: 45px;
+    /*line-height: 45px;*/
+    text-align: center;
+}
+
+
+/*首页头部*/
+#pg-header{
+            border-bottom: 1px solid #ddd;
+            background-color: #e3e4e5;
+            height: 38px;
+            line-height: 38px;
+        }
+
+#pg-header a{
+    color: #999;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+#pg-header a:hover{
+    color: red;
+}
+
+/*首页中部*/
+#pg-middle{
+        height: 45px;
+        line-height: 45px;
+}
+#logo{
+    width: 300px;
+}
+
+/*search框*/
+.form{
+    float: right;
+    border: 2px solid #c91623;
+    background: #c91623;
+    height: 42px;
+    margin-top: 3px;
+    overflow: hidden;
+}
+.form #key{
+    border: 0;
+    height: 40px;
+    /* line-height: 20px; */
+    width: 289px;
+    padding: 3px 5px;
+    outline: 0;
+}
+
+.form .button{
+    width: 67px;
+    height: 35px;
+    background: #c91623;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    /* -webkit-appearance: none; */
+    /* margin: 0; */
+    padding: 0;
+    border: 0;
+}
+
+
+
+/*首页尾部*/
+#pg_end{
+        height: 800px;
+        /*background-color: #d9534f;*/
+        width: 1400px;
+        white-space: nowrap; /* 自适应宽度*/
+        word-break:  keep-all; /* 避免长单词截断，保持全部 */
+        margin: 100px auto;
+}
+
+#pg_end_left{
+            height: 800px;
+            width: 20%;
+            background-color: #ff5b79;
+            margin: 0 0 0 100px;
+            float: left;
+            position: relative; /*生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素*/
+    
+}
+
+#pg_end_right {
+            height: 800px;
+            width: 65%;
+            margin: 0 100px 0 0;
+            /*background-color: darkgrey;*/
+            float: left;
+            position: relative;/*生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素*/
+    }
+
+div dl dt {
+    font-size: 16px;
+    color: #FFF;
+    position: relative;
+    padding: 10px 20px 0 20px;
+    width: 300px;
+    display: block;
+    float: left;
+
+}
+div dl dd a {
+    font-size: 14px;
+    color: #FFF;
+    display: inline;
+    padding: 20px 20px 0 0;
+    /*word-wrap:break-word与word-break:break-all共同点是都能把长单词强行断句，
+    不同点是word-wrap:break-word会首先起一个新行来放置长单词，新的行还是放不下这个长单词则会对长单词进行强制断句；
+    而word-break:break-all则不会把长单词放在一个新行里，当这一行放不下的时候就直接强制断句了。*/
+    word-wrap: break-word;
+    word-break: break-all;
+    float: left;
+}
+div dl dd a:hover {
+    color: red;
+}
+div a{
+    float: left;
+}
+#shopping_car{
+    background-color: #F9F9F9;
+    height: 45px;
+    position: relative;
+}
+.shopping_car span{
+    position: absolute;
+    color: red;
+    /* background-color: #F9F9F9; */
+    /* height: 45px; */
+    /* line-height: 45px; */
+    left: 17px;
+    /* text-align: center; */
+}
+.shopping_car_logo{
+    position: absolute;
+    /* padding-top: 10px; */
+    margin-right: 0;
+    right: 0;
+    top: 10px;
+    left: 101px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../javaScript/common.js"></script>
+</head>
+<body style="margin: 0 auto">
+    <div class="form_head">
+    <div id="logo">
+        <img src="../css/image/logo-201305-b.png" alt="logo">
+        <span class="welcome">欢迎注册</span>
+        <span class="please_login">已有账号？<a href="login.html">请登录</a></span>
+    </div>
+    </div>
+    <div class="register_start"></div>
+    <div class="pg_body">
+        <div class="pg_body_left">
+            <form id="register-from" method="post">
+                <div class="form-item " >
+                    <label>用　户　名</label>
+                    <input type="text" name="regName" class="field"  maxlength="20" placeholder="您的账户名和登录名">
+                </div>
+                <div class="form-item " >
+                    <label>确 认 密 码</label>
+                    <input type="text" name="regName" class="field"  maxlength="20" placeholder="请再次输入密码">
+                </div>
+                <div class="form-item " >
+                    <label>中国 0086</label>
+                    <input type="text" name="regName" class="field"  maxlength="20" placeholder="建议使用常用手机">
+                </div>
+                <div class="form-item " >
+                    <label>验　证　码</label>
+                    <input type="text" name="regName" class="field"  maxlength="20" placeholder="请输入验证码">
+                    <img class="qr-code" src="../css/image/微信.png">
+                </div>
+                <div class="form-item" >
+                    <label>手机验证码</label>
+                    <input type="text" name="regName" class="phone" maxlength="20" placeholder="请输入手机验证码">
+                    <button id="getPhoneCode" class="phone_code" type="button" onclick="tips('假的，逗你玩的')">获取验证码</button>
+                </div>
+                <div class="button_reg">
+                    <button type="submit" class="button_register" onclick="tips('假的，逗你玩的')">立即注册</button>
+                </div>
+            </form>
+        </div>
+        <div class="pg_body_right">
+            <img id="company" src="../css/image/company.png">
+            <img id="international" src="../css/image/international.png">
+        </div>
+    </div>
+</body>
+</html>

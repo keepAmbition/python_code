@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>shopping_car</title>
+    <link rel="stylesheet" href="../css/shopping_car.css">
+    <script src="../javaScript/common.js">
+    </script>
+</head>
+<body>
+    <div class="pg_head">
+        <div id="logo">
+            <img src="../css/image/logo-201305-b.png" alt="logo">
+            <span class="welcome">购物车</span>
+            <div class="form">
+                <input id="key" type="text"  autocomplete="off" value="自营" />
+                <input type="button" class="button" value="搜索" onclick="tips('假的，逗你玩的')"/>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="commodity_title">
+            <div class="all_commodity">全部商品</div>
+            <div class="logistics">
+                <span>配送至:</span>
+            </div>
+            <div class="select">
+            <select id="address" size="1" multiple="multiple"> <!--下拉框，option的内容为选项内容-->
+                    <option value="1">北京一环以内</option>
+                    <option value="2">北京二环以内</option>
+                    <option value="3" selected="selected">北京三环以内</option>
+                    <option value="4">北京四环以内</option>
+            </select>
+            </div>
+        </div>
+        <div class="commodity_statistics">
+            <div class="cart-checkbox" onclick="checkbox()">
+                <input  type="checkbox" name="toggle-checkboxes" class="checkbox"/>
+            </div>
+            <div class="column all_goods">全选</div>
+            <div class="column goods">商品</div>
+            <div class="column price">单价</div>
+            <div class="column count">数量</div>
+            <div class="column sum">小计</div>
+            <div class="column action">操作</div>
+        </div>
+        <div class="commodity_list">
+             <div class="shop">
+                <input  onclick="checkbox()" type="checkbox">
+                <div class="JD_logo"></div>
+            </div>
+            <div id="item-list" class="item-list">
+                <div id="list1" class="list">
+                        <input class="list_checkbox" type="checkbox">
+                        <div class="cell p-goods">
+                            <img class="img-1" src="../css/image/5a07281eNf5157ff2.jpg" alt="
+							海鸥(SeaGull)手表 三历多功能飞轮机械男表白盘白圈黑带219.328
+							">
+                            <span>海鸥(SeaGull)手表 三历多功能飞轮机械男表白盘白圈黑带219.328
+							</span>
+                            <img class="img-2" src="../css/image/support.png">
+                            <img class="img-3" src="../css/image/gift.png">
+                        </div>
+                        <div class="cell p-props p-props-new">
+                            <div class="props-txt" title="白盘黑带">颜色：白盘黑带</div>
+                        </div>
+                        <div class="cell p-price p-price-new ">
+                            <strong id ="p-price" >¥1480</strong>
+                        </div>
+                        <div class="cell p-count">
+                            <div class="quantity-form">
+						<div onclick="decrease('changeQuantity-1','p-price','p-sum')" class="decrement disabled" id="decrement_8888_3103978_1_1">-</div>
+						<input autocomplete="off" type="text" class="itxt" value="1" id="changeQuantity-1">
+						<div onclick="add('changeQuantity-1','p-price','p-sum')" class="increment" id="increment_8888_3103978_1_1_0">+</div>
+					</div>
+                        </div>
+                        <div class="cell p-sum">
+                            <strong id="p-sum">¥1480</strong>
+                        </div>
+                        <div class="cell p-action">
+                            <strong id="p-action" onclick="tips('假的，逗你玩的')">删除</strong>
+                        </div>
+                </div>
+                <div id="list2" class="list">
+                    <input class="list_checkbox" type="checkbox">
+                        <div class="cell p-goods">
+                            <img class="img-1" src="../css/image/5a06e9c4Ne4adf939.jpg" alt="
+							海鸥(SeaGull)手表 简约商务系列时尚单历自动机械情侣表女表白盘棕色皮带D519.405L">
+                            <span>海鸥(SeaGull)手表 简约商务系列时尚单历自动机械情侣表女表白盘棕色皮带D519.405L
+							</span>
+                            <img class="img-2" src="../css/image/support.png">
+                            <img class="img-3" src="../css/image/gift.png">
+                        </div>
+                        <div class="cell p-props p-props-new">
+                            <div class="props-txt" title="白盘黑带">颜色：复古 单历 女表</div>
+                        </div>
+                        <div class="cell p-price p-price-new ">
+                            <strong id ="p1-price" >¥1280</strong>
+                        </div>
+                        <div class="cell p-count">
+                            <div class="quantity-form">
+						<div onclick="decrease('changeQuantity-2','p1-price','p1-sum')" class="decrement disabled">-</div>
+						<input autocomplete="off" type="text" class="itxt" id="changeQuantity-2" value="1" >
+						<div onclick="add('changeQuantity-2','p1-price','p1-sum')" class="increment">+</div>
+					</div>
+                        </div>
+                        <div class="cell p-sum">
+                            <strong id="p1-sum">¥1280</strong>
+                        </div>
+                        <div class="cell p-action">
+                            <strong id="p1-action" onclick="tips('假的，逗你玩的')">删除</strong>
+                        </div>
+                </div>
+                <div id="list3" class="list">
+                    <input class="list_checkbox" type="checkbox">
+                        <div class="cell p-goods">
+                            <img class="img-1" src="../css/image/56dd07eaNddb30bbf.jpg" alt="
+							海鸥(SeaGull)手表 简约商务系列时尚单历自动机械情侣表男表白盘钢带D519.405">
+                            <span>海鸥(SeaGull)手表 简约商务系列时尚单历自动机械情侣表男表白盘钢带D519.405
+							</span>
+                            <img class="img-2" src="../css/image/support.png">
+                            <img class="img-3" src="../css/image/gift.png">
+                        </div>
+                        <div class="cell p-props p-props-new">
+                            <div class="props-txt" title="白盘黑带">颜色：单历 钢带男表</div>
+                        </div>
+                        <div class="cell p-price p-price-new ">
+                            <strong id ="p2-price" >¥2480</strong>
+                        </div>
+                        <div class="cell p-count">
+                            <div class="quantity-form">
+						<div onclick="decrease('changeQuantity-3','p2-price','p2-sum')" class="decrement disabled">-</div>
+						<input autocomplete="off" type="text" class="itxt" id="changeQuantity-3" value="1" >
+						<div onclick="add('changeQuantity-3','p2-price','p2-sum')" class="increment">+</div>
+					</div>
+                        </div>
+                        <div class="cell p-sum">
+                            <strong id="p2-sum">¥2480</strong>
+                        </div>
+                        <div class="cell p-action">
+                            <strong id="p2-action" onclick="tips('假的，逗你玩的')">删除</strong>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="settle_accounts">
+            <div class="cart-checkbox" onclick="checkbox()">
+                <input type="checkbox" name="toggle-checkboxes" class="checkbox"/>
+            </div>
+            <div class="column all_goods">全选</div>
+            <strong class="delete_all" onclick="tips('假的，逗你玩的')">删除选中商品</strong>
+            <div class="Total">总价:<span>￥<span id="total">5240</span></span></div>
+            <button class="settle_accounts_button" onclick="tips('假的，逗你玩的')">去结算</button>
+        </div>
+    </div>
+</body>
+</html>
