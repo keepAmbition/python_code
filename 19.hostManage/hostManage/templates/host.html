@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+ <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/host.css">
+</head>
+<body>
+
+<div class="pg-header">
+    <div class="logo left">
+        oms后台
+    </div>
+    <div class="user right">
+        <a class="a" href="#">
+            <img src="/static/img/img1.jpeg">
+        </a>
+
+        <div class="b">
+            <a href="/static/img/img1.jpeg">我的资料</a>
+            <a href="/static/img/img1.jpeg">注销</a>
+        </div>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span>5</span>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="oms_page">
+<div>
+    <input id="add_host" type="button" value="添加"/>
+</div>
+<table border="1">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>主机名</th>
+        <th>IP</th>
+        <th>端口</th>
+        <th>业务线名称</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in v1 %}
+        <tr h_id="{{ row.nid }}" b_id="{{ row.b_id }}">
+            <td>{{ forloop.counter }}</td>
+            <td>{{ row.hostname }}</td>
+            <td>{{ row.ip }}</td>
+            <td>{{ row.port }}</td>
+            <td>{{ row.b.caption }}</td>
+            <td>
+                <a class="edit">编辑</a>|<a class="delete">删除</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+
+<div class="shade hide"></div>
+<div class="add-modal hide">
+    <form id="add_form" method="POST" action="/app/host">
+            <input id="host" type="text" placeholder="主机名" name="hostname"/>
+            <input id="ip" type="text" placeholder="IP" name="ip"/>
+            <input id="port" type="text" placeholder="端口" name="port"/>
+            <select id="sel" name="b_id">
+                {% for op in b_list %}
+                    <option value="{{ op.id }}">{{ op.caption }}</option>
+                {% endfor %}
+            </select>
+        <div>
+        <input type="submit" value="提交"/>
+        <a id="ajax_submit">ajax提交</a>
+        <input id="cancel" type="button" value="取消"/>
+        </div>
+        <span id="erro_msg" style="color: red"></span>
+    </form>
+
+
+</div>
+
+<div class="edit-modal hide">
+    <form id="edit_form" method="POST" action="app/host">
+        <input type="text" name="nid" style="display:none"/>
+        <input type="text" placeholder="主机名" name="hostname"/>
+        <input type="text" placeholder="IP" name="ip"/>
+        <input type="text" placeholder="端口" name="port"/>
+        <select name="b_id">
+            {% for op in b_list %}
+                <option value="{{ op.id }}">{{ op.caption }}</option>
+            {% endfor %}
+        </select>
+        <a id="ajax_submit_edit">确认编辑</a>
+        <a id="cancel_submit_edit">取消编辑</a>
+    </form>
+</div>
+
+
+<script src="/static/jquery-1.12.4.js"></script>
+<script src="/static/host.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Host Manage</title>
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+
+<div class="pg-header">
+    <div class="logo left">
+        oms后台
+    </div>
+    <div class="user right">
+        <a class="a" href="#">
+            <img src="/static/img/img1.jpeg">
+        </a>
+
+        <div class="b">
+            <a href="/static/img/img1.jpeg">我的资料</a>
+            <a href="/static/img/img1.jpeg">注销</a>
+        </div>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span>5</span>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="oms_page">
+<div>
+    <input id="add_app" type="button" value="添加"/>
+    <a href="/app/host" id="host_manage">主机管理</a>
+</div>
+<table border="1">
+    <thead>
+    <tr>
+        <td>应用名称</td>
+        <td>应用主机列表</td>
+        <td>操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for app in app_list %}
+        <tr aid="{{ app.id }}">
+            <td>{{ app.name }}</td>
+            <td>
+                {% for host in app.host.all %}
+                    <span class="host-tag" hid="{{ host.nid }}"> {{ host.hostname }} </span>
+                {% endfor %}
+            </td>
+            <td>
+                <a class="edit">编辑</a>|<a class="delete">删除</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+
+
+
+<div class="shade hide"></div>
+<div class="add-modal hide">
+    <form id="add_form" method="POST" action="/app/app">
+            <input id="app_name" type="text" placeholder="应用名称" name="app_name"/>
+            <select id="host_list" name="host_list" multiple>
+                {% for op in host_list %}
+                    <option value="{{ op.nid }}">{{ op.hostname }}</option>
+                {% endfor %}
+            </select>
+
+        <input id="add_submit" type="submit" value="提交"/>
+        <input id="add_submit_ajax" type="button" value="Ajax提交"/>
+    </form>
+</div>
+
+<div class="edit-modal hide">
+    <form id="edit_form" method="POST" action="/app">
+        <input type="text" name="nid" style="display:none"/>
+        <input type="text" placeholder="应用名称" name="app"/>
+        <select name="host_list" multiple>
+            {% for op in host_list %}
+                <option value="{{ op.nid }}">{{ op.hostname }}</option>
+            {% endfor %}
+        </select>
+        <a id="ajax_submit_edit">确认编辑</a>
+        <a id="cancel_submit_edit">取消编辑</a>
+    </form>
+</div>
+<script src="/static/jquery-1.12.4.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

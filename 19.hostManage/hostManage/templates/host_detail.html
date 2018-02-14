@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+ <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/host.css">
+</head>
+<body>
+
+<div class="pg-header">
+    <div class="logo left">
+        oms后台
+    </div>
+    <div class="user right">
+        <a class="a" href="#">
+            <img src="/static/img/img1.jpeg">
+        </a>
+
+        <div class="b">
+            <a href="/static/img/img1.jpeg">我的资料</a>
+            <a href="/static/img/img1.jpeg">注销</a>
+        </div>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <span>5</span>
+    </div>
+    <div class="icons right">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+    </div>
+</div>
+<div class="oms_page">
+<table border="1">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>主机名</th>
+        <th>IP</th>
+        <th>端口</th>
+        <th>业务线名称</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in v1 %}
+        <tr h_id="{{ row.nid }}" b_id="{{ row.b_id }}">
+            <td>{{ forloop.counter }}</td>
+            <td>{{ row.hostname }}</td>
+            <td>{{ row.ip }}</td>
+            <td>{{ row.port }}</td>
+            <td>{{ row.b.caption }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+
+</body>
+</html>

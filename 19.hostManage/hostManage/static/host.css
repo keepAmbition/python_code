@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+}
+/*page_head*/
+.pg-header {
+    height: 48px;
+    background-color: #566eae;
+    color: white;
+    line-height: 48px;
+}
+
+.pg-header .logo {
+    width: 200px;
+    background-color: #566eae;
+    text-align: center;
+}
+
+.pg-header .icons {
+    padding: 0 20px;
+}
+
+.pg-header .icons:hover {
+    background-color: #f0ad4e;
+}
+
+.pg-header .user {
+    margin-right: 60px;
+    padding: 0 20px;
+    color: white;
+    height: 48px;
+    position: relative;
+}
+
+.pg-header .user:hover {
+    background-color: #f0ad4e;
+}
+
+.pg-header .user .a img {
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    border-radius: 50%;
+}
+
+.pg-header .user .b {
+    z-index: 20;
+    position: absolute;
+    top: 48px;
+    background-color: #dddddd;
+    width: 114px;
+    display: none;
+    font-size: 14px;
+    line-height: 30px;
+    right: -12px;
+    text-align: center;
+}
+
+.pg-header .user .b a {
+    padding: 5px;
+    color: #fff8f0;
+    text-decoration: none;
+}
+
+.pg-header .user .b a:hover {
+    background-color: #dddddd;
+}
+
+.pg-header .user:hover .b {
+    display: block;
+}
+
+.pg-header .user .b a {
+    display: block;
+}
+
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+
+
+/*pge_body*/
+.oms_page{
+    width: 1250px;
+    height: 520px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+.oms_page #add_host {
+    border: 0;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.oms_page table{
+    border: 0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing:0;
+    border-collapse: collapse;
+}
+
+.oms_page thead{
+    background-color: #eeeeee;
+}
+
+.oms_page tr{
+    height: 80px;
+}
+
+.oms_page table tr:hover{
+    background-color: #eeeeee;
+}
+.oms_page table tr td:hover{
+    background-color: skyblue;
+}
+.oms_page table tr td a{
+    cursor: pointer;
+}
+
+
+/*模态对话框*/
+.hide {
+    display: none;
+}
+
+.shade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.6;
+    z-index: 100;
+}
+
+
+.add-modal, .edit-modal {
+    position: fixed;
+    height: 400px;
+    width: 700px;
+    top: 100px;
+    left: 43%;
+    z-index: 101;
+    /* border: 1px solid red; */
+    background: white;
+    margin-left: -198px;
+}
+
+#add_form input{
+    margin-top: 145px;
+    margin-left: 22px;
+    height: 28px;
+}
+#edit_form input{
+    margin-top: 145px;
+    margin-left: 22px;
+    height: 28px;
+}
+#add_form select{
+    height: 34px;
+    margin-left: 10px;
+}
+#edit_form select{
+    height: 34px;
+    margin-left: 10px;
+}
+
+#add_form input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    border: 0;
+    margin-top: 39px;
+    margin-left: 115px;
+    cursor: pointer;
+}
+#add_form input[type="button"]{
+    width: 100px;
+    height: 40px;
+    border: 0;
+    margin-top: 39px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+
+#add_form a{
+    display: inline-block;
+    background-color: buttonface;
+    width: 100px;
+    color: buttontext;
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+#edit_form a{
+    display: inline-block;
+    background-color: buttonface;
+    width: 100px;
+    color: buttontext;
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    font-size: 14px;
+    margin-left: 155px;
+    margin-top: 50px;
+    cursor: pointer;
+}
