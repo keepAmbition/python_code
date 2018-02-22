@@ -1,5 +1,5 @@
-﻿**readme**
-
+**readme**
+```
 FR24 Export/
 |-- case/(目前case类代码已弃用)
 |   |-- __init__.py
@@ -36,3 +36,4 @@ OW:直飞航班        RT:中转航班
 1: 直飞航班        2:中转航班
 domestic:境内接口  overseas:境外接口
 a:deva环境（如需其他环境，更改其他环境的简写字母，如b,c,d,x,不过其他接口url未配置）
+```
